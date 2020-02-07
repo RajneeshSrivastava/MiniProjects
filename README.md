@@ -1,2 +1,2 @@
 # MiniProjects
-This is a collection of projects, I have worked on during my PhD training, course work or other than my main PhD projects
+This is a collection of projects other than my main PhD projects, I worked on just for curiosity
