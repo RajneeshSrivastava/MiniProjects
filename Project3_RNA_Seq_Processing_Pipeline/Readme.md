@@ -8,6 +8,7 @@ FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.tab + Gene_exp.tab
      Hisat       Samtools           Stringtie
 
 ## Built in Unix environment
+'''
 $python Pipeline_Fastq-to-Quant.py -h
 usage: Pipeline_Fastq-to-Quant.py [-h] [-file [fq [fq ...]]]
                                   [-modules [module [module ...]]] [-n N]
@@ -30,3 +31,4 @@ optional arguments:
   -gtf GTF              <path>/reference annotation file (default:
                         Reference/mouse/mm10.gtf)
   -odir ODIR            output directory path (default: )
+'''
