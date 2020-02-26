@@ -1,4 +1,9 @@
-This is a general purpose script for handling fasta file. Here i am using 2019nCoV (Corona Virus) genome, released on Jan26, 2020.
+## Analysis of the 2019-nCoV (Corona virus) genome
 
-Here is the basic stats of #Coronavirus genome (MT020881_1, 29.8kb). The sequence is downloaded from NCBI (Note: It is a ssRNA virus).
-I observed that the GC-content of this virus genome is 38% however it is generally high at beginning and the end of the genome. It is possible that the ends of this viral genome (with higher GC content) have more stable secondary structures than central region (with lower GC content).
+This is a #dailycoding project. Here I analyzed the genome of 2019-nCoV, a deadly ssRNA virus identified for
+epidemic respiratory illness (mainly in China). I downloaded its 29.8 kb genome from NCBI and analyzed
+its base composition. I observed that the GC-content of this viral genome was 38%, and generally high (~50%)
+at both the ends. This analysis suggest that this virus genome exhibit more stable secondary structure at the
+ends than central region (with lower GC content). .
+
+Link: https://www.linkedin.com/feed/update/urn:li:activity:6631395850914414592/
