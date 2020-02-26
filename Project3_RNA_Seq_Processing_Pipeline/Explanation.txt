@@ -15,8 +15,9 @@ STEP C: Do reads manipulation as per statistics for each FASTQ samples using FAS
 	  fastx_trimmer -Q 33 -f 3 -l 73 -i Sample.fastq -o Sample_T.fastq		
     
   # In order to exclude the bases
-  with low phred score, trimming of the reads was done. In this case only 3rd (by -f) to 73rd (by -l) bases were kept.  	
-	fastq_quality_filter -Q 33 -q 30 -i Sample_T.fastq -o Sample_q30.fastq		# Reads with average phred score <30 were filtered out
+  with low phred score, trimming of the reads was done. Example - Here only 3rd (by -f) to 73rd (by -l) bases were kept.  	
+	fastq_quality_filter -Q 33 -q 30 -i Sample_T.fastq -o Sample_q30.fastq		
+	# Reads with average phred score <30 were filtered out
 
 STEP D: Align the high quality sequencing reads (from STEP C) onto human reference genome (hg38) using Hisat (installed? Must be Yes).
 	This step includes two sub-steps:
@@ -25,14 +26,14 @@ STEP D: Align the high quality sequencing reads (from STEP C) onto human referen
     hisat-build -f /Human/Homo_sapiens.GRCh38.84.dna.toplevel.fa /Human/h38.84/h38.84    
     # Refernce genome (and .gtf file for annotation) for human was downloaded from Ensembl using following command:
     wget ftp://ftp.ensembl.org/pub/release-84/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
-		NOTE: This step is required just once to index the genome build and can be used in next step directly	
+    NOTE: This step is required just once to index the genome build and can be used in next step directly	
 	
   2. Alignment:
 		hisat -p 32 -q -x /Human/h38.84/h38.84 -1 Rep1_1.fastq -2 Rep1_2.fastq -S /Output/Rep1.sam
 
 STEP E: Use samtools (check the module availability) for post processing of the aligned reads
 
-  samtools view -bS /Output/Rep1.sam > /Output/Rep1.bam     # data compression
+  	samtools view -bS /Output/Rep1.sam > /Output/Rep1.bam     # data compression
 	samtools sort /Output/Rep1.bam /Output/Rep1.sorted        # sorting
 	samtools index /Output/Rep1.sorted.bam                    # indexing the bam
 
