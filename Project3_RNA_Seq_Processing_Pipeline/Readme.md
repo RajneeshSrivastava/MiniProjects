@@ -8,7 +8,7 @@ User can customise the JobTemplate to use this script in any cluster depending o
 
 #### Main steps in current pipeline are:
 
-FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.tab + Gene_exp.tab
+FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.gtf + Gene_exp.tab
 
 ## How to use?
 #This code can work in Unix environment
