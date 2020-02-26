@@ -1,5 +1,5 @@
 ## Pipeline to analyse RNA sequencing data
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Alt text](C:/Users/rajne/Desktop/Pipeline.pdf?raw=true "Pipeline_for Chip-seq data analysis")
 
 
 STEP A: Download the raw RNA sequencing data (FASTQ files) in local directory
