@@ -15,8 +15,11 @@ stages. Several of the novel transcripts and splicing events were verified using
 Two articles were published using this pipeline:
 1. Budak G, Dash S, **Srivastava R**, et al. Express: A database of transcriptome profiles encompassing known and novel
 transcripts across multiple development stages in eye tissues Exp Eye Res. 2018 Mar;168:57-68.
+![](https://www.nature.com/articles/s41598-017-10615-4/figures/1)
+
 2. **Srivastava R** et al. Transcriptome analysis of developing lens reveals abundance of novel transcripts and
 extensive splicing alterations. Sci Rep. 2017 Sep 14;7(1):11572.
+
 
 ## The program "Pipeline_Fastq-to-Quant.py" is designed to generate script(s) as per the number of fastq files in a given directory.
 
