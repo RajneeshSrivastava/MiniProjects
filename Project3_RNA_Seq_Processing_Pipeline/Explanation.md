@@ -1,4 +1,7 @@
-## Pipeline to analyse RNA sequencing data 
+## Pipeline to analyse RNA sequencing data
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
+
 STEP A: Download the raw RNA sequencing data (FASTQ files) in local directory
 
 STEP B: Analyse the quality and statistics of reads using FASTQC-toolkits. 
