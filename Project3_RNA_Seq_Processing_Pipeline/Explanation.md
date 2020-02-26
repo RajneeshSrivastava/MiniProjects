@@ -1,4 +1,4 @@
-## Pipeline to analyse RNA sequencing data
+# Pipeline to analyse RNA sequencing data
 ![](./RNAseq_Pipeline.jpg)
 
 
@@ -6,12 +6,13 @@
 
 User can customise the JobTemplate to use this script in any cluster depending on the requirements and modules available
 
-## Current pipeline is following this workflow:
+#### Main steps in current pipeline are:
 
 FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.tab + Gene_exp.tab
      Hisat       Samtools           Stringtie
 
-## Built in Unix environment
+## How to use:
+#Built in Unix environment
 
 	$python Pipeline_Fastq-to-Quant.py -h
 	usage: Pipeline_Fastq-to-Quant.py [-h] [-file [fq [fq ...]]]
@@ -19,8 +20,8 @@ FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.tab + Gene_exp.tab
                                   [-p P] [-w W] [-index INDEX] [-gtf GTF]
                                   [-odir ODIR]
 
-# Routine pipeline for RNA-seq fastq file processing and quant
-
+	Routine pipeline for RNA-seq fastq file processing and quant
+	
 	optional arguments:
 	  -h, --help            show this help message and exit
 	  -file [fq [fq ...]]   input fast(q|a) file(s) optional:path/*.fastq
