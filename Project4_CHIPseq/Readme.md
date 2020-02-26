@@ -1,6 +1,10 @@
-# Pipeline to analyse ChIP-seq data (From alignment to differential peak calling)
+# Pipeline to analyse ChIP-seq data 
+(From alignment to differential peak calling)
+
 ![](./CHIP_Pipeline.jpg)
 
+
+### Major steps involved in data processing
 STEP 1: Download the raw sequencing data (FASTQ files) in local directory
 
 STEP 2: Analyse the quality and statistics of reads using FASTQC-toolkits. 
