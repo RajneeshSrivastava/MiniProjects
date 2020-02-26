@@ -1,5 +1,5 @@
 ## Pipeline to analyse RNA sequencing data
-![Alt text](MiniProjects/Project3_RNA_Seq_Processing_Pipeline/Pipeline.jpg?raw=true "Title")
+![](MiniProjects/Project3_RNA_Seq_Processing_Pipeline/Pipeline.jpg)
 
 STEP A: Download the raw RNA sequencing data (FASTQ files) in local directory
 
