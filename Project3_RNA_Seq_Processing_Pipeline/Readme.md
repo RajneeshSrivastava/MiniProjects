@@ -15,7 +15,7 @@ stages. Several of the novel transcripts and splicing events were verified using
 Two articles were published using this pipeline:
 1. Budak G, Dash S, **Srivastava R**, et al. Express: A database of transcriptome profiles encompassing known and novel
 transcripts across multiple development stages in eye tissues Exp Eye Res. 2018 Mar;168:57-68.
-![](https://www.nature.com/articles/s41598-017-10615-4/figures/1)
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-017-10615-4/MediaObjects/41598_2017_10615_Fig1_HTML.jpg?as=webp)
 
 2. **Srivastava R** et al. Transcriptome analysis of developing lens reveals abundance of novel transcripts and
 extensive splicing alterations. Sci Rep. 2017 Sep 14;7(1):11572.
