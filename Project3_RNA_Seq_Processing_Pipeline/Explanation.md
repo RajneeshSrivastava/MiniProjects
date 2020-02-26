@@ -1,5 +1,5 @@
 ## Pipeline to analyse RNA sequencing data
-![](./Pipeline.jpg?height=10&weight=10)
+![](./RNAseq_Pipeline.jpg)
 
 STEP A: Download the raw RNA sequencing data (FASTQ files) in local directory
 
