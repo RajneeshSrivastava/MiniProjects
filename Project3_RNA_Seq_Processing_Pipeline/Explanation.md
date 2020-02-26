@@ -4,10 +4,11 @@ STEP A: Download the raw RNA sequencing data (FASTQ files) in local directory
 STEP B: Analyse the quality and statistics of reads using FASTQC-toolkits. 
 
 [Optional: The software should be installed in local machine or cluster and can be accesed by using following command]
-		
-module load java/1.7.0_25   
+
+module load java/1.7.0_25
 module load fastqc/0.10.1
 fastqc -o /Out_Dir/ -f fastq /Sample.fastq 	      
+
 # where Sample = fastq samples provided
 
 STEP C: Do reads manipulation as per statistics for each FASTQ samples using FASTX-Toolkit 
