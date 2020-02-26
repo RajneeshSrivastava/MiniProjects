@@ -33,8 +33,8 @@ This step includes two sub-steps:
 #Refernce genome (and .gtf file for annotation) for human was downloaded from Ensembl using following command:
 		
 		wget ftp://ftp.ensembl.org/pub/release-84/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
-   
-    		NOTE: This step is required just once to index the genome build and can be used in next step directly	
+   	
+	#NOTE: This step is required just once to index the genome build and can be used in next step directly	
 	
 2. Alignment:
 	
@@ -49,7 +49,7 @@ STEP E: Use samtools (check the module availability) for post processing of the 
 STEP F: Quantification for processed reads using StringTie (Check for module availability)
 
 		stringtie /Output/Rep1.sorted.bam -p 32 -G /Human/Homo_sapiens.GRCh38.84.gtf -o /Output/Rep1.gtf -A /Output/Rep1.tab
-  		# .gtf file contains the quantified transcriptome .tab file provides the gene level expression
+  		#.gtf file contains the quantified transcriptome .tab file provides the gene level expression
 	
 Note: This pipeline quantifies the annotated as well as novel genes (having prefix "STRG."). Flagging "e" in above command   
 restrict the assembly to annotated genes/ transcripts
