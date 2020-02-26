@@ -4,11 +4,11 @@
 ![](./CHIP_Pipeline.jpg)
 
 ## Regulomics in multiple lineage of T-cells.
-I used this pipeline to analyse ChIP seq data for p-300 and myc across multiple lineages of T cells (Th1, Th2, Th17
-and Treg) in collaboration with Dr. Mark Kaplan (https://medicine.iu.edu/faculty/906/kaplan-mark/). 
+I implemented this pipeline to analyse ChIP seq data for p-300 and myc across multiple lineages of T cells (Th1, Th2, Th17
+and Treg). I completed the bioinformatics analysis of this project in The Janga lab (https://jangalab.sitehost.iu.edu/), in collaboration with Dr. Mark Kaplan (https://medicine.iu.edu/faculty/906/kaplan-mark/). 
 Our team has discovered an enhanced and highly conserved chip signal for p-300 at 6kb and 25 kb upstream of IL9 gene
 in Th9 cells but not in other cell lineages. Our team has verified and characterized these signals as enhancer for 
-IL9 gene in Th9 cells. This article was published in **Nature communications** in year 2018
+IL9 gene in Th9 cells. This article was published in **Nature communications** in year 2018.
 
 ### Major steps involved in data processing
 STEP 1: Download the raw sequencing data (FASTQ files) in local directory
