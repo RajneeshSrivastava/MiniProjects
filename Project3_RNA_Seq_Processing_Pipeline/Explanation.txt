@@ -13,17 +13,19 @@ STEP C: Do reads manipulation as per statistics for each FASTQ samples using FAS
 		
     	module load fastx/0.0.13 (in Karst)
 	fastx_trimmer -Q 33 -f 3 -l 73 -i Sample.fastq -o Sample_T.fastq		
-    
-  # In order to exclude the bases
-  with low phred score, trimming of the reads was done. Example - Here only 3rd (by -f) to 73rd (by -l) bases were kept.  	
-	fastq_quality_filter -Q 33 -q 30 -i Sample_T.fastq -o Sample_q30.fastq		
-	# Reads with average phred score <30 were filtered out
+    	As an example - Here only 3rd (by -f) to 73rd (by -l) bases were kept.  
+ 
+ 	# In order to exclude the bases with low phred score, trimming of the reads was done. 
+  	fastq_quality_filter -Q 33 -q 30 -i Sample_T.fastq -o Sample_q30.fastq		
+		# For instance - Here reads with average phred score <30 were filtered out
 
 STEP D: Align the high quality sequencing reads (from STEP C) onto human reference genome (hg38) using Hisat (installed? Must be Yes).
 This step includes two sub-steps:
+
   1. Building up the indexes for reference genome
 	
-    hisat-build -f /Human/Homo_sapiens.GRCh38.84.dna.toplevel.fa /Human/h38.84/h38.84    
+    hisat-build -f /Human/Homo_sapiens.GRCh38.84.dna.toplevel.fa /Human/h38.84/h38.84
+    
     # Refernce genome (and .gtf file for annotation) for human was downloaded from Ensembl using following command:
     wget ftp://ftp.ensembl.org/pub/release-84/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
     NOTE: This step is required just once to index the genome build and can be used in next step directly	
@@ -41,7 +43,9 @@ STEP F: Quantification for processed reads using StringTie (Check for module ava
 
   	stringtie /Output/Rep1.sorted.bam -p 32 -G /Human/Homo_sapiens.GRCh38.84.gtf -o /Output/Rep1.gtf -A /Output/Rep1.tab
   	# .gtf file contains the quantified transcriptome .tab file provides the gene level expression
-	Note: This pipeline quantifies the annotated as well as novel genes (having prefix "STRG."). Flagging "e" in above command restrict the assembly to annotated genes/ transcripts
+	
+	Note: This pipeline quantifies the annotated as well as novel genes (having prefix "STRG."). Flagging "e" in above command   
+	restrict the assembly to annotated genes/ transcripts
 
 STEP G: Get the gene level expression of the samples in tab.  
 
