@@ -10,6 +10,10 @@ Our team has discovered an enhanced and highly conserved chip signal for p-300 a
 in Th9 cells but not in other cell lineages. Our team has verified and characterized these signals as enhancer for 
 IL9 gene in Th9 cells. This article was published in **Nature communications** in year 2018.
 
+Koh B, Abdul Qayum A, **Srivastava R** et al. A conserved enhancer regulates Il9 expression in multiple lineages. Nature
+Communications. 2018 Nov 15;9(1):4803.
+
+
 ## Major steps involved in data processing
 STEP 1: Download the raw sequencing data (FASTQ files) in local directory
 
