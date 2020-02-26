@@ -9,10 +9,9 @@ User can customise the JobTemplate to use this script in any cluster depending o
 #### Main steps in current pipeline are:
 
 FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.tab + Gene_exp.tab
-     Hisat       Samtools           Stringtie
 
-## How to use:
-#Built in Unix environment
+## How to use?
+#This code can work in Unix environment
 
 	$python Pipeline_Fastq-to-Quant.py -h
 	usage: Pipeline_Fastq-to-Quant.py [-h] [-file [fq [fq ...]]]
