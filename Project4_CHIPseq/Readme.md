@@ -13,6 +13,8 @@ IL9 gene in Th9 cells. This article was published in **Nature communications** i
 Koh B, Abdul Qayum A, **Srivastava R** et al. A conserved enhancer regulates Il9 expression in multiple lineages. Nature
 Communications. 2018 Nov 15;9(1):4803.
 
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-018-07202-0/MediaObjects/41467_2018_7202_Fig1_HTML.png?as=webp)
+
 
 ## Major steps involved in data processing
 STEP 1: Download the raw sequencing data (FASTQ files) in local directory
