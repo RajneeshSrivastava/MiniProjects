@@ -1,4 +1,4 @@
-## This program is designed to generate script(s) as per the number of fastq files in a given directory.
+## The program "PIPELINEbuilder" is designed to generate script(s) as per the number of fastq files in a given directory.
 
 User can customise the JobTemplate to use this script in any cluster depending on the requirements and modules available
 
