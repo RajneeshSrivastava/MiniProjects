@@ -94,4 +94,4 @@ STEP F: Quantification for processed reads using StringTie (Check for module ava
 Note: This pipeline quantifies the annotated as well as novel genes (having prefix "STRG."). Flagging "e" in above command   
 restrict the assembly to annotated genes/ transcripts
 
-STEP G: Get the gene level expression of the samples in tab.
+STEP G: Get the gene level expression of the samples in .tab files.
