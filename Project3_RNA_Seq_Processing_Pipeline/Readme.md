@@ -39,7 +39,7 @@ FASTQ ---> SAM ---> BAM ---> SORTED.BAM ---> Transcript_exp.gtf + Gene_exp.tab
                                   [-p P] [-w W] [-index INDEX] [-gtf GTF]
                                   [-odir ODIR]
 
-	Routine pipeline for RNA-seq fastq file processing and quant
+#### Routine pipeline for RNA-seq fastq file processing and quant
 	
 	optional arguments:
 	  -h, --help            show this help message and exit
