@@ -3,6 +3,8 @@
 ![](./SliceIt_RBP-sgRNA_db.png)
 
 
+**Publication:** Methods. 2019 Sep 5. pii: S1046-2023(19)30111-2. doi: 10.1016/j.ymeth.2019.09.004.
+
 #### This database facilitates a collection of 4.8 millions of sgRNA targeting all possible binding sites of RNA Binding Proteins documented in ENCODE project.
 
 ![](./bs_sgrna_stats.png)
