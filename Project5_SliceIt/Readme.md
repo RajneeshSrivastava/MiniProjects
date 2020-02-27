@@ -3,9 +3,12 @@
 ![](./SliceIt_RBP-sgRNA_db.png)
 
 
-**SliceIt** can be accessed by following below link:
+**SliceIt** can be accessed by following the link:
+
 https://sliceit.soic.iupui.edu/
 
 The web interface for SliceIt was developed by Sasank Vemuri. 
-Please see the source code here: https://github.com/savemuri/SliceIt 
+
+Please see the source code here:
+https://github.com/savemuri/SliceIt 
 
