@@ -1,6 +1,7 @@
 # Pipeline to analyse RNA sequencing data
 ![](./RNAseq_Pipeline.jpg)
 
+##Note: Please use the reference according to the generated dataset/ cohort.
 
 ## To investigate the complete transcriptome architecture of developing mouse eye.
 I implemented this pipeline to investigate the complete transcriptome of developing mouse eye (lens and retina). 
