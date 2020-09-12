@@ -1,6 +1,6 @@
 # Pipeline to analyse POP-seq data (_From alignment to peak calling_)
 
-![](./POP-seq_pipeline.png)
+![](./POPseq_Pipeline.jpg)
 
 **Figure 1:** The complete workflow of POP-seq protocol in K562 cells and data analysis (A) Cells were lysed using trizol to generate three phases (aqueous, interphase and organic phase). Cell lysates from the POP-seq variants are digested with RNase A/T1 mix, Proteinase K and DNase followed by r-RNA depletion, RNA quality check and library preparation for illumina sequencing (B) Workflow for POP-seq data processing and downstream analysis.
 
