@@ -1,10 +1,27 @@
-# Pipeline to analyse POP-seq data 
-(From alignment to peak calling)
+# Pipeline to analyse POP-seq data (_From alignment to peak calling_)
 
-![](./POPseq_Pipeline.jpg)
+![](./POP-seq_pipeline.png)
 
-**Figure 1:** The complete workflow of POP-seq protocol in K562 cells and data analysis (A) Cells were lysed using trizol to generate three phases (aqueous, interphase and organic phase). Cell lysates from the POP-seq variants are digested with RNase A/T1 mix, Proteinase K and DNase followed by r-RNA depletion, RNA quality check and library preparation for illumine sequencing (B) Workflow for POP-seq data processing and downstream analysis.
+**Figure 1:** The complete workflow of POP-seq protocol in K562 cells and data analysis (A) Cells were lysed using trizol to generate three phases (aqueous, interphase and organic phase). Cell lysates from the POP-seq variants are digested with RNase A/T1 mix, Proteinase K and DNase followed by r-RNA depletion, RNA quality check and library preparation for illumina sequencing (B) Workflow for POP-seq data processing and downstream analysis.
 
+# Prerequisites
+Install below software as per user manuals:
+
+fastqc (https://github.com/s-andrews/FastQC)
+
+Samtools (https://github.com/samtools)
+
+Bedtools (https://github.com/arq5x/bedtools2)
+
+Hisat (https://daehwankimlab.github.io/hisat2/)
+
+Piranha (http://smithlabresearch.org/software/piranha/) (from The Smith lab)
+
+## Data-set public access:
+	
+UCSC-genome-browser: https://genome.ucsc.edu/s/Rajneesh/POP-seq-peaks_with_total_RNA_and_ENCODE-eCLIPs 
+
+Gene Expression Omnibus (GEO): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142460
 
 # Major steps involved in data processing
 STEP 1: Download the raw sequencing data (FASTQ files) in local directory
@@ -18,7 +35,7 @@ STEP 2: Analyse the quality and statistics of reads using FASTQC-toolkits.
 
 NOTE: Check if all the files provided were of good quality (Generally Phred score > 30)
 
-## How to use the next steps [3-5] of the pipeline [semi-automated]
+### How to use the next steps [3-5] of the pipeline [semi-automated]
 
 Run Pipeline_POP-seq.py program as follows, to generate the multiple scripts (jobs) for data processing
 
@@ -42,7 +59,7 @@ Run Pipeline_POP-seq.py program as follows, to generate the multiple scripts (jo
   	-odir ODIR            output directory path (default:./)
 
 
-STEP 3: Align the high quality sequencing reads (from STEP 3) onto human reference genome (hg38) using Hisat (check your aligner!).
+STEP 3: Align the high quality sequencing reads (from STEP 2) onto human reference genome (hg38) using Hisat (check your aligner!).
 This includes two sub-steps:
 
 	module load hisat/0.1.6        						# load module available in cluster/ machine
@@ -74,7 +91,8 @@ STEP 5: Run piranha for peak calling from POP-seq data and identify binding peak
 	
 	module load piranha-1.2.1						# load module available in cluster
 	cd ./Output/
-	./path/Piranha -l -s input_Rep1.bed -o output_Rep1_peaks.bed
-	(from The Smith lab http://smithlabresearch.org/software/piranha/)
+	./path/Piranha -l -s Rep1_sorted.bed -o output_Rep1_peaks.bed
+
+STEP 6: For any downstream comparison of POP-seq peaks with publically available eCLIP OR fRIP OR ribo-seq peaks, below code identifies the intersecting peaks with 50% base-to-base overlap.
 	
-STEP 6: Downstream analysis and bench marking
+	bedtools intersect -f 0.50 -r -a POP-seq_peaks.bed -b RBP_eCLIP.bed|sort -k1,1 -k2,2n|uniq > POP-seq_intersect_peaks.bed     
